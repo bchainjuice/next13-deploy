@@ -23,21 +23,22 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.heroContainer}>
         <div>
-          <h1>
+          <h3>
             <span className={styles.gradientText0}>
-                Alpha-KEY
+              ALPHA[ KEY ]
             </span>
-            </h1>
-          <p>Alpha-KEY holders will be eligible to stake and earn tokens.</p>
-          <p>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</p>
+            </h3>
+          <p>Unlock CONTRACTS</p>
+          <h3>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h3>
           {address ? (
             <Web3Button
               contractAddress={ERC721_CONTRACT_ADDRESS}
               action={(contract) => contract.erc721.claim(1)}
+              theme="dark"
               onSuccess={() => alert("Claimed NFT")}
-            >Claim</Web3Button>
+            >CLAIM</Web3Button>
           ) : (
-            <p>Sign-in to claim</p>
+            <p>CONNECT TO CLAIM</p>
           )}
         </div>
         <div className={styles.heroImageContainer}>
@@ -51,7 +52,7 @@ const Home: NextPage = () => {
               <p>{ERC721ContractMetadata?.name}</p>
             </div>
           ) : (
-            <p>Loading...</p>
+            <p>HODL....</p>
           )}
         </div>
       </div>

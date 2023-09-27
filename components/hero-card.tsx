@@ -20,7 +20,7 @@ export default function HeroCard(Props: HeroCardProps) {
                     <MediaRenderer
                         src={Props.image}
                         width="100%"
-                        height="auto"
+                        height="100%"
                         className={styles.heroCardContractImage}
                     />
                     <div className={styles.heroCardContent}>

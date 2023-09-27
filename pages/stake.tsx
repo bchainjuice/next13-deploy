@@ -45,15 +45,16 @@ export default function Stake() {
 
         getClaimableReward();
     }, [address, StakeContract]);
+    
 
     return (
         <div className={styles.container}>
             <h1>
             <span className={styles.gradientText0}>
-                [ FEG20-NFT-Staking ]
+            STAKE [ NFT ]
             </span>
             </h1>
-            <h5>Stake Alpha-KEY to earn FEG20 tokens.</h5>
+            <h5>Stake ERC721 NFT, earn ERC20 tokens as reward.</h5>
             <div className={styles.stakeRewardContainer}>
                 <div className={styles.stakeRewardInfo}>
                     <h3>Rewards</h3>
@@ -70,6 +71,7 @@ export default function Stake() {
                     <Web3Button
                         contractAddress={STAKING_CONTRACT_ADDRESS}
                         action={(contract) => contract.call("claimRewards")}
+                        theme="dark"
                         onSuccess={() => {
                             alert("Claimed Rewards");
                             setClaimableReward(ethers.constants.Zero);

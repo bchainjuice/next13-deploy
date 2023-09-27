@@ -36,40 +36,28 @@ export default function ERC20Project() {
             /> 
             <div className={styles.grid}>
                  <div className={styles.componentCard}>
-                      <h3>[ Stats ]</h3>
-                      {tokenSupplyIsLoading ? (
-                           <p>Loading supply...</p>
-                      ) : (
-                           <p>Total supply: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
-                      )}
-                 </div>
-                 <div className={styles.componentCard}>
-                       <h3>[ Balance ]</h3>
+                       <h3>| Balance |</h3>
                        {tokenBalanceIsLoading ? (
-                            <p>Loading balance...</p>
+                            <p>Loading balance..</p>
                       ) : (
-                            <p>Balance: {tokenBalance?.displayValue} {tokenBalance?.symbol}</p>
+                            <p>{tokenBalance?.displayValue} {tokenBalance?.symbol}</p>
                       )}
                       <Web3Button
                              contractAddress={ERC20_CONTRACT_ADDRESS}
                              action={(contract) => contract.erc20.burn(100)}
                              theme="dark"
                       >
-                         Burn 100 Tokens
+                         BURN
                       </Web3Button>
-                 </div>
-                 <div className={styles.componentCard}>
-                        <h3>[ Earn FEG20 Tokens ]</h3>
-                        <p>Stake-To-Earn.</p>
                  </div>
                        <Link href='/stake'>
                             <button className={styles.matchButton}>
-                              Stake NFT
+                              Stake now
                               </button>
                        </Link>
                        <Link href='/project/erc721'>
                             <button className={styles.matchButton}>
-                              Claim NFT
+                              Claim now
                               </button> 
                        </Link>
             </div>

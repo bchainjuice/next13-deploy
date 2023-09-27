@@ -55,16 +55,18 @@ export default function StakeNFTGrid({
     return (
         <div className={styles.stakeSection}>
             <div className={styles.stakeHeader}>
-                <h3>Owned:</h3>
+                <h5>Owned:</h5>
                 <Web3Button
                     contractAddress={STAKING_CONTRACT_ADDRESS}
                     action={() => stakeNFT(selectedNFTs)}
+                    theme="dark"
                     onSuccess={() => {
                         alert("Staked NFTs")
                         setSelectedNFTs([]);
                     }}
                     isDisabled={selectedNFTs.length === 0}
-                >{`Stake NFTs (${selectedNFTs.length})`}</Web3Button>
+                >{`Stake(${selectedNFTs.length})`}
+                </Web3Button>
             </div>
             <hr />
             <div className={styles.nftGridContainer}>

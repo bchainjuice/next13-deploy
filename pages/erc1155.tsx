@@ -23,21 +23,22 @@ export default function ERC1155() {
         <div className={styles.container}>
             <div className={styles.heroContainer}>
                 <div>
-                <h1>
+                <h3>
                 <span className={styles.gradientText0}>
-                Airdrop-PASS
+                [ PASS ]
             </span>
-            </h1>
-                <p>Airdrop-PASS holders will be eligible for future airdrops.</p>
-                <p>Cost: 0.0 BNB {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
+            </h3>
+                <p>CHECKPOINT</p>
+                <h3>Cost: 0.003 BNB{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h3>
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
+
                     onSuccess={() => alert("Claimed NFT")}
-                    >Claim</Web3Button>
+                    >CLAIM</Web3Button>
                 ) : (
-                    <p>Connect to claim</p>
+                    <p>CONNECT TO CLAIM</p>
                 )}
                 </div>
                 <div className={styles.heroImageContainer}>
@@ -45,13 +46,13 @@ export default function ERC1155() {
                     <div className={styles.heroImage}>
                     <MediaRenderer
                         src={ERC1155ContractMetadata?.image}
-                        height="70%"
-                        width="70%"
+                        height="90%"
+                        width="90%"
                     />
                     <p>{ERC1155ContractMetadata?.name}</p>
                     </div>
                 ) : (
-                    <p>Loading...</p>
+                    <p>HODL...</p>
                 )}
                 </div>
             </div>

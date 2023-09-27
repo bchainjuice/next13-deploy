@@ -43,11 +43,12 @@
 .title {
   line-height: 1.15;
   font-size: 4rem;
+  text-align: center;
 }
 
 .title,
 .description {
-  text-align: left;
+  text-align: center;
 }
 
 .connect {
@@ -59,13 +60,15 @@
   margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .code {
-  background: #555555;
+  background: #52705c;
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .grid {
@@ -73,6 +76,7 @@
   justify-content: left;
   flex-wrap: wrap;
   gap: 20px;
+  text-align: center;
 }
 
 .card {
@@ -85,6 +89,7 @@
   max-width: 440px;
   overflow: none;
   border: none;
+  text-align: center;
 }
 
 .cardText {
@@ -133,6 +138,7 @@
   .title {
     font-size: 3rem;
     line-height: 1.15;
+    text-align: center;
   }
 }
 
@@ -174,13 +180,13 @@
   transition: all 0.2s ease-in-out;
 }
 .navbarLinks p:hover {
-  color: #9af99f;
+  color: #07f312;
 }
 .profilePicture {
   width: 32px;
   height: 32px;
   border-radius: 32px;
-  outline: 1px solid rgb(38, 105, 29);
+  outline: 2px solid rgb(38, 105, 29);
 }
 .profilePicture:hover {
   cursor: pointer;
@@ -191,18 +197,18 @@
   justify-content: flex-start;
   align-items: flex-start;
   position: absolute;
-  top: 84px;
-  right: 100px;
+  top: 40px;
+  right: 40px;
   width: 200px;
   height: auto;
-  background-color: #496646;
-  border-radius: 8px;
+  background-color: #072204;
+  border-radius: 20px;
   z-index: 1;
   padding: 1rem;
 }
 .profileMenuAddress {
-  font-size: xx-small;
-  border: #89b673 1px solid;
+  font-size: small;
+  border: #073807 1px solid;
   border-radius: 15px;
   padding: 0.5rem;
 }
@@ -221,13 +227,13 @@
   width: 100%;
 }
 .navbarSignOutButton {
-  background-color: #78be7e;
-  border: #274729 1px solid;
-  border-radius: 5px;
-  padding: 0.5rem;
+  background-color: #113d20;
+  border: #02fd12 1px solid;
+  border-radius: 10px;
+  padding: 0.6rem;
   color: #fff;
   text-decoration: none;
-  font-size: x-small;
+  font-size: small;
   margin: 0.5rem 0;
 }
 
@@ -286,7 +292,7 @@
 
 .stakeSection {
   width: 50%;
-  border: #222 1px solid;
+  border: #098619 1px solid;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
@@ -296,6 +302,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .stakeRewardContainer {
   display: flex;
@@ -303,7 +310,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem;
-  border: #222 1px solid;
+  border: #238a20 2px solid;
   border-radius: 8px;
   margin: 1rem;
 }

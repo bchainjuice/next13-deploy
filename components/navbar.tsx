@@ -22,27 +22,23 @@ export default function Navbar() {
     return (
         <div className={styles.navbarContainer}>
             <Link href="/">
-                <p className={styles.navbarLogo}><span className={styles.gradientText1}>[ Alpha ]</span></p>
+                <p className={styles.navbarLogo}><span className={styles.gradientText3}>[KEY]</span></p>
             </Link>
             <div className={styles.navbarLinks}>
                 <Link
                     href={"/erc1155"}
                 >
-                    <p>  
-                        <span className={styles.gradientText1}>
-                    [ Feed-The-Gorillas ]
-            </span>
-                    </p>
+                    <p>[PASS]</p>
                 </Link>
                 <Link 
                     href={"/stake"}
                 >
-                    <p>[ Stake ]</p>
+                    <p>[STAKE]</p>
                 </Link>
                 <Link
                     href={"/erc20"}
                 >
-                    <p>[ Token ]</p>
+                    <p>[FEG20]</p>
                 </Link>
             </div>
             <div>
@@ -66,7 +62,7 @@ export default function Navbar() {
                                         setProfileMenuOpen(false);
                                     }}
                                 >
-                                    <p className={styles.profileMenuLink}>Profile</p>
+                                    <p className={styles.profileMenuLink}>[ Profile ]</p>
                                 </Link>
                                 <hr className={styles.divider}/>
                                 <button
@@ -81,8 +77,9 @@ export default function Navbar() {
                     </>
                 ) : (
                     <ConnectWallet 
-                        btnTitle='Sign in'
-                        modalTitle='Connect'
+                        btnTitle='CONNECT'
+                        modalTitle='WALLET'
+                        theme="dark"
                     />
                 )}
             </div>

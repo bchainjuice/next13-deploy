@@ -7,7 +7,7 @@
 
 .coverImage {
     width: 100%;
-    background-color: #272a2d;
+    background-color: #385239;
     height: 300px;
     border-radius: 16px;
 }
@@ -17,7 +17,7 @@
     height: 132px;
     border-radius: 132px;
     vertical-align: inherit;
-    outline: 3px solid rgba(255, 255, 255, 0.5);
+    outline: 3px solid rgba(108, 199, 161, 0.5);
     margin-top: -72px;
     margin-left: 5%;
 }
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(71, 172, 92, 0.6);
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -40,19 +40,19 @@
     padding: 16px;
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(133, 189, 145, 0.6);
     cursor: pointer;
     transition: color 0.1s ease-in-out;
 }
 
 .tab:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(15, 216, 92, 0.8);
 }
 
 .activeTab {
     color: rgba(255, 255, 255, 1);
-    border-bottom: 2px solid #0294fe;
-    color: #0294fe;
+    border-bottom: 2px solid #0afe0260;
+    color: #17fe02;
 }
 
 .tabContent {
