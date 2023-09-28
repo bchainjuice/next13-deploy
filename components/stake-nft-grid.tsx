@@ -4,6 +4,7 @@ import StakeNFTCard from "./stake-nft-card";
 import { useState } from "react";
 import { Web3Button, useAddress, useContract } from "@thirdweb-dev/react";
 import { ERC721_CONTRACT_ADDRESS, STAKING_CONTRACT_ADDRESS } from "../const/addresses";
+import Image from "next/image"
 
 type Props = {
     isLoading: boolean;
@@ -14,7 +15,7 @@ type Props = {
 export default function StakeNFTGrid({ 
     isLoading, 
     data, 
-    emptyText = "No NFTs"
+    emptyText = "[No NFTs]"
 }: Props) {
     const address = useAddress();
     const [selectedNFTs, setSelectedNFTs] = useState<number[]>([]);
@@ -55,7 +56,9 @@ export default function StakeNFTGrid({
     return (
         <div className={styles.stakeSection}>
             <div className={styles.stakeHeader}>
-                <h5>Owned:</h5>
+                <h5><span className={styles.gradientText3}>
+                [OWNED]
+            </span></h5>
                 <Web3Button
                     contractAddress={STAKING_CONTRACT_ADDRESS}
                     action={() => stakeNFT(selectedNFTs)}
@@ -65,7 +68,7 @@ export default function StakeNFTGrid({
                         setSelectedNFTs([]);
                     }}
                     isDisabled={selectedNFTs.length === 0}
-                >{`Stake(${selectedNFTs.length})`}
+                >{`STAKE[${selectedNFTs.length}]`}
                 </Web3Button>
             </div>
             <hr />
@@ -73,7 +76,7 @@ export default function StakeNFTGrid({
                 {isLoading ? (
                     [...Array(20)].map((_, index) => (
                         <div key={index} className={styles.nftContainer}>
-                            <p>Loading...</p>
+                            <p><Image src="/icons/loading.gif" alt="" width={50} height={50}></Image></p>
                         </div>
                     ))
                 ) : data && data.length > 0 ? (

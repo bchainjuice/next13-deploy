@@ -6,6 +6,7 @@ import { useState } from 'react';
 import ProfileERC721 from '../../components/profile-erc721';
 import { ERC20_CONTRACT_ADDRESS } from '../../const/addresses';
 import ProfileERC1155 from '../../components/profile-erc1155';
+import Image from "next/image"
 
 const [randomColor1, randomColor2, randomColor3, randomColor4] = [
     randomColor(),
@@ -52,9 +53,9 @@ export default function Profile() {
                         />
                     </div>
                     <h3 className={styles.profileAddress}>{truncateAddress(address)}</h3>
-                    <p className={styles.profileAddress}>Balance: {
+                    <p className={styles.profileAddress}>[BALANCE]: {
                         ERC20BalanceIsLoading ? (
-                            <p>Loading...</p>
+                            <p><Image src="/icons/loading.gif" alt="" width={50} height={50}></Image></p>
                         ) : (
                             <>{ERC20Balance?.displayValue} {ERC20Balance?.symbol}</>
                         )
@@ -66,14 +67,14 @@ export default function Profile() {
                         ${tab === "ERC721" ? styles.activeTab : ""}`}
                         onClick={() => setTab("ERC721")}
                         >
-                        ERC721
+                        ERC721[NFT]
                         </h3>
                         <h3
                         className={`${styles.tab} 
                         ${tab === "ERC1155" ? styles.activeTab : ""}`}
                         onClick={() => setTab("ERC1155")}
                         >
-                        ERC1155
+                        ERC1155[NFT]
                         </h3>
                     </div>
 

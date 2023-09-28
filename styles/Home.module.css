@@ -6,7 +6,7 @@
 }
 
 .gradientText0 {
-  background: -webkit-linear-gradient(#a3daa3, #309c39, #35c76d);
+  background: -webkit-linear-gradient(#2edb2e, #309c39, #35c76d);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,7 +37,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-  text-decoration-color: #309c42;
+  text-decoration-color: #5c9e5c;
 }
 
 .title {
@@ -80,7 +80,7 @@
 }
 
 .card {
-  background-color: #131313;
+  background-color: #043b0e;
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -108,7 +108,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-  background-color: #272c34;
+  background-color: #2a4729;
   opacity: 80%;
 }
 
@@ -144,7 +144,7 @@
 
 .card,
 .footer {
-  border-color: #222;
+  border-color: #10270a;
 }
 .logo img {
   filter: invert(1);
@@ -180,7 +180,7 @@
   transition: all 0.2s ease-in-out;
 }
 .navbarLinks p:hover {
-  color: #07f312;
+  color: #088a0e;
 }
 .profilePicture {
   width: 32px;
@@ -201,37 +201,37 @@
   right: 40px;
   width: 200px;
   height: auto;
-  background-color: #072204;
+  background-color: #0b3106;
   border-radius: 20px;
   z-index: 1;
   padding: 1rem;
 }
 .profileMenuAddress {
   font-size: small;
-  border: #073807 1px solid;
+  border: #33f00d 1px solid;
   border-radius: 15px;
   padding: 0.5rem;
 }
 .profileMenuLink {
   font-size: medium;
   margin: 0.5rem 0;
-  color: #fff;
+  color: #b4f7ba;
   text-decoration: none;
 
   transition: all 0.2s ease-in-out;
 }
 .profileMenuLink:hover {
-  color: #9af9a6;
+  color: #09f729;
 }
 .divider {
   width: 100%;
 }
 .navbarSignOutButton {
   background-color: #113d20;
-  border: #02fd12 1px solid;
+  border: #022004 1px solid;
   border-radius: 10px;
   padding: 0.6rem;
-  color: #fff;
+  color: #09ff1d;
   text-decoration: none;
   font-size: small;
   margin: 0.5rem 0;
@@ -277,7 +277,7 @@
 }
 .stakedNFTCard {
   width: 30%;
-  border: #222 1px solid;
+  border: #128839 1px solid;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
@@ -331,6 +331,6 @@
 .claimableRewards {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
-  margin: 0.75rem 0;
+  color: #4cfa08;
+  margin: 0.5rem 0;
 }

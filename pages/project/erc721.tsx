@@ -3,6 +3,7 @@ import HeroCard from "../../components/hero-card";
 import styles from '/styles/Home.module.css';
 import Link from 'next/link';
 import { ERC721_CONTRACT_ADDRESS } from "../../const/addresses";
+import Image from "next/image"
 
 export default function ERC721Project() {
     const address = useAddress();
@@ -42,18 +43,19 @@ export default function ERC721Project() {
                 />
                 <div className={styles.grid}>
                     <div className={styles.componentCard}>
-                          <h3>[ Stake Alpha-key ]</h3>
+                          <h3>HODL[KEY]</h3>
                           <p>Earn FEG20 tokens.</p>
                           <Web3Button
                               contractAddress={ERC721_CONTRACT_ADDRESS}
                               action={(contract) => contract.erc721.claim(1)}
+                              theme='dark'
                               onSuccess={() => alert("NFT Claimed!")}
-                          >Claim</Web3Button>
+                          >[CLAIM]</Web3Button>
                     </div>
                     <div className={styles.componentCard}>
-                          <h3>[ Stats ]</h3>
+                          <h3>[ STATS ]</h3>
                           <p>
-                            Total Supply:
+                            [TOTAL SUPPLY]:
                             {totalSupplyIsLoading ? (
                                 "Loading.."
                             ) : (
@@ -61,7 +63,7 @@ export default function ERC721Project() {
                             )}
                           </p>
                           <p>
-                            Total Claimed:
+                            [TOTAL CLAIMED]:
                             {totalClaimedSupplyIsLoading ? (
                                 "Loading..."
                             ) : (
@@ -70,9 +72,9 @@ export default function ERC721Project() {
                           </p>
                     </div>
                     <div className={styles.componentCard}>
-                           <h3>[ Your NFTs ]</h3>
+                           <h3>[ NFTs ]</h3>
                            <p>
-                            Total Owned:
+                            [TOTAL OWNED]:
                             {ownedNFTsIsLoading ? (
                                 "Loading..."
                             ) : (
@@ -85,7 +87,7 @@ export default function ERC721Project() {
                     <h2>[ My NFTs ]</h2>
                     <div className={styles.grid} style={{justifyContent: "flex-start"}}>
                         {ownedNFTsIsLoading ? (
-                               <p>Loading...</p>
+                               <p><Image src="/icons/loading.gif" alt="drop" width={50} height={50} /></p>
                             ) : (
                                 ownedNFTs?.map((nft) => (
                               <div className={styles.card} key={nft.metadata.id}>
@@ -103,7 +105,7 @@ export default function ERC721Project() {
                                             borderRadius: "0 0 10px 10px",
                                        }}
                                        
-                                    >Stake NFT</button>
+                                    >STAKE[NFT]</button>
                                 </Link>
 
                            

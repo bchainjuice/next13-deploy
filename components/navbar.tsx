@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import randomColor from '../util/randomColor';
 import { useState } from 'react';
+import Image from "next/image"
 
 const [randomColor1, randomColor2] = [
     randomColor(),
@@ -21,6 +22,7 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbarContainer}>
+            <Image src="/icons/FEG20.gif" alt="drop" width={100} height={100} />
             <Link href="/">
                 <p className={styles.navbarLogo}><span className={styles.gradientText3}>[KEY]</span></p>
             </Link>
@@ -28,17 +30,17 @@ export default function Navbar() {
                 <Link
                     href={"/erc1155"}
                 >
-                    <p>[PASS]</p>
+                    <h5><span className={styles.gradientText3}>[PASS]</span></h5>
                 </Link>
                 <Link 
                     href={"/stake"}
                 >
-                    <p>[STAKE]</p>
+                    <h5><span className={styles.gradientText3}>[STAKE]</span></h5>
                 </Link>
                 <Link
                     href={"/erc20"}
                 >
-                    <p>[FEG20]</p>
+                    <h5><span className={styles.gradientText3}>[FEG20]</span></h5>
                 </Link>
             </div>
             <div>
@@ -62,7 +64,8 @@ export default function Navbar() {
                                         setProfileMenuOpen(false);
                                     }}
                                 >
-                                    <p className={styles.profileMenuLink}>[ Profile ]</p>
+                                     <Image src="/icons/nft.gif" alt="" width={100} height={100} />
+                                    <h3 className={styles.profileMenuLink}>[ TRAVELER ]</h3>
                                 </Link>
                                 <hr className={styles.divider}/>
                                 <button
@@ -71,18 +74,20 @@ export default function Navbar() {
                                         disconnect();
                                         setProfileMenuOpen(false);
                                     }}
-                                >Disconnect</button>
+                                >[ -Disconnect- ]</button>
                             </div>
                         )}
                     </>
                 ) : (
                     <ConnectWallet 
                         btnTitle='CONNECT'
-                        modalTitle='WALLET'
+                        modalTitle='Welcome Traveler'
                         theme="dark"
+                        
                     />
                 )}
             </div>
         </div>
+        
     );
 };

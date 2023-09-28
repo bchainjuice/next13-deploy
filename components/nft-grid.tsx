@@ -1,6 +1,7 @@
 import type { NFT as NFTType } from "@thirdweb-dev/sdk";
 import styles from "../styles/NFT.module.css";
 import NFTCard from "./nft-card";
+import Image from "next/image"
 
 type Props = {
     isLoading: boolean;
@@ -20,7 +21,7 @@ export default function NFTGrid({
             {isLoading ? (
                 [...Array(20)].map((_, index) => (
                     <div key={index} className={styles.nftContainer}>
-                        <p>Loading...</p>
+                        <p><Image src="/icons/loading.gif" alt="" width={50} height={50}></Image></p>
                     </div>
                 ))
             ) : data && data.length > 0 ? (

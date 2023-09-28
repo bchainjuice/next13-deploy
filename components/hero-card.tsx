@@ -1,5 +1,6 @@
 import { MediaRenderer } from '@thirdweb-dev/react';
 import styles from '../styles/Home.module.css';
+import Image from "next/image"
 
 type HeroCardProps = {
     isLoading: boolean;
@@ -13,7 +14,7 @@ export default function HeroCard(Props: HeroCardProps) {
         <>  
             {Props.isLoading ? (
                  <div className={styles.loadingText}>
-                    <p>Loading....</p>
+                    <p><Image src="/icons/loading.gif" alt="drop" width={50} height={50} /></p>
                  </div>
             ) : (
                 <div className={styles.heroCardContainer}>

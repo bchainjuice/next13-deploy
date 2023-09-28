@@ -21,7 +21,7 @@ export default function ProfileERC721({ walletAddress }: Props) {
 
     return (
         <div className={styles.container}>
-            <h3>Total Owned: {ownedERC721Tokens?.length}</h3>
+            <h3>[TOTAL OWNED]: {ownedERC721Tokens?.length}</h3>
             <NFTGrid
                 isLoading={ownedERC721TokensIsLoading}
                 data={ownedERC721Tokens}
