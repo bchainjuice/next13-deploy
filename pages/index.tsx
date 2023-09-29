@@ -4,6 +4,7 @@ import { MediaRenderer, Web3Button, useActiveClaimCondition, useAddress, useCont
 import { ERC721_CONTRACT_ADDRESS } from "../const/addresses";
 import Image from "next/image"
 
+
 const Home: NextPage = () => {
   const address = useAddress();
 
@@ -26,18 +27,18 @@ const Home: NextPage = () => {
         <div>
           <h3>
             <span className={styles.gradientText0}>
-              ALPHA[ KEY ]
+              [ KEY ]
             </span>
             </h3>
-          <p>Unlock [CONTRACTS]</p>
-          <h3>[Price]: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h3>
+          <p>The world is yours...</p>
+          <h4>[Price]: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h4>
           {address ? (
             <Web3Button
               contractAddress={ERC721_CONTRACT_ADDRESS}
               action={(contract) => contract.erc721.claim(1)}
               theme="dark"
               onSuccess={() => alert("Claimed NFT")}
-            >[CLAIM]</Web3Button>
+            >CLAIM<Image src="/icons/2.gif" alt="" width={40} height={40}/></Web3Button>
           ) : (
             <p>Connect to claim!</p>
           )}

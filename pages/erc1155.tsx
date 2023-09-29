@@ -29,15 +29,15 @@ export default function ERC1155() {
                 [ PASS ]
             </span>
             </h3>
-                <p>CHECKPOINT</p>
-                <h3>[Price]: 0.003 BNB{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h3>
+                <p>Sybil resistance</p>
+                <h4>[Price]: 0.003 BNB{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
-
+                    theme="dark"
                     onSuccess={() => alert("Claimed NFT")}
-                    >[CLAIM]</Web3Button>
+                    >CLAIM<Image src="/icons/2.gif" alt="" width={40} height={40}/></Web3Button>
                 ) : (
                     <p>Connect to claim!</p>
                 )}
