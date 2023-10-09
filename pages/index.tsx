@@ -26,8 +26,8 @@ const Home: NextPage = () => {
       <div className={styles.heroContainer}>
         <div>
           <h3>
-            <span className={styles.gradientText0}>
-              [ KEY ]
+            <span className={styles.gradientText1}>
+              [ PASS ]
             </span>
             </h3>
           <h4>[Price]: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h4>
@@ -35,11 +35,11 @@ const Home: NextPage = () => {
             <Web3Button
               contractAddress={ERC721_CONTRACT_ADDRESS}
               action={(contract) => contract.erc721.claim(1)}
-              theme="dark"
               onSuccess={() => alert("Claimed NFT")}
-            >CLAIM<Image src="/icons/2.gif" alt="" width={40} height={40}/></Web3Button>
+            >Claim
+            </Web3Button>
           ) : (
-            <p>Connect to claim!</p>
+            <p>Connect Wallet to claim!</p>
           )}
         </div>
         <div className={styles.heroImageContainer}>
@@ -47,13 +47,13 @@ const Home: NextPage = () => {
             <div className={styles.heroImage}>
               <MediaRenderer
                 src={ERC721ContractMetadata?.image}
-                height="80%"
-                width="80%"
+                height="70%"
+                width="70%"
               />
               <p>{ERC721ContractMetadata?.name}</p>
             </div>
           ) : (
-            <p><Image src="/icons/loading.gif" alt="" width={50} height={50}/></p>
+            <p><Image src="/icons/loading.gif" alt="" width={150} height={150}/></p>
           )}
         </div>
       </div>

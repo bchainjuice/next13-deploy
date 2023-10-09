@@ -43,14 +43,13 @@ export default function ERC721Project() {
                 />
                 <div className={styles.grid}>
                     <div className={styles.componentCard}>
-                          <h3><Image src="/icons/4.gif" alt="drop" width={400} height={400} /></h3>
-                          <p><Image src="/icons/coin.png" alt="drop" width={50} height={50} /></p>
+                          <h3><Image src="/icons/claim.png" alt="drop" width={400} height={400} /></h3>
                           <Web3Button
                               contractAddress={ERC721_CONTRACT_ADDRESS}
                               action={(contract) => contract.erc721.claim(1)}
                               theme='dark'
                               onSuccess={() => alert("NFT Claimed!")}
-                          >CLAIM[ KEY ]</Web3Button>
+                          ><Image src="/icons/claim key.gif" alt="" width={60} height={60}/></Web3Button>
                     </div>
                     <div className={styles.componentCard}>
                           <h3>[ NFT STATS ]</h3>

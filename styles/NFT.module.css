@@ -14,7 +14,7 @@
     overflow: hidden;
     border-radius: 8px;
     backface-visibility: hidden;
-    outline: 1px solid rgba(169, 223, 180, 0.89);
+    outline: 1px solid rgba(179, 169, 223, 0.89);
     transform: translate3d(0px, 0px, 0px);
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     overflow: hidden;
     border-radius: 8px;
     backface-visibility: hidden;
-    outline: 1px solid rgba(35, 122, 3, 0.445);
+    outline: 1px solid rgba(15, 3, 122, 0.445);
     transform: translate3d(0px, 0px, 0px);
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
 .nftContainer:hover, .stakeNftContainer:hover {
     cursor: pointer;
     transform: translate3d(0px, -4px, 0px);
-    box-shadow: 0px 4px 8px rgba(16, 184, 38, 0.781);
+    box-shadow: 0px 4px 8px rgba(33, 16, 184, 0.781);
     align-items: center;
 }
 
@@ -65,13 +65,13 @@
 .nftName {
     font-size: 9px;
     font-weight: 600;
-    color: rgba(198, 253, 205, 0.8);
+    color: rgba(198, 206, 253, 0.8);
     align-items: center;
 }
 
 .nftTokenId {
     font-size: 9px;
-    color: rgb(27, 77, 30);
+    color: rgb(45, 67, 112);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     padding: 2px;
@@ -80,7 +80,7 @@
 
 .stakeSection {
     width: 100%;
-    border: #097710 1px solid;
+    border: #092677 1px solid;
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem;

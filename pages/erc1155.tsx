@@ -25,7 +25,7 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 <h3>
-                <span className={styles.gradientText0}>
+                <span className={styles.gradientText1}>
                 [ PASS ]
             </span>
             </h3>
@@ -37,9 +37,9 @@ export default function ERC1155() {
                     action={(contract) => contract.erc1155.claim(0, 1)}
                     theme="dark"
                     onSuccess={() => alert("Claimed NFT")}
-                    >CLAIM<Image src="/icons/2.gif" alt="" width={40} height={40}/></Web3Button>
+                    ><Image src="/icons/claim pass.gif" alt="" width={30} height={30}/></Web3Button>
                 ) : (
-                    <p>Connect to claim!</p>
+                    <p>Connect Wallet to claim!</p>
                 )}
                 </div>
                 <div className={styles.heroImageContainer}>
@@ -47,13 +47,13 @@ export default function ERC1155() {
                     <div className={styles.heroImage}>
                     <MediaRenderer
                         src={ERC1155ContractMetadata?.image}
-                        height="90%"
-                        width="90%"
+                        height="80%"
+                        width="80%"
                     />
                     <p>{ERC1155ContractMetadata?.name}</p>
                     </div>
                 ) : (
-                    <p><Image src="/icons/loading.gif" alt="" width={50} height={50}></Image></p>
+                    <p><Image src="/icons/loading.gif" alt="" width={150} height={150}></Image></p>
                 )}
                 </div>
             </div>

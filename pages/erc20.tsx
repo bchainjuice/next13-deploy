@@ -42,33 +42,17 @@ export default function ERC20Project() {
                       {tokenSupplyIsLoading ? (
                            <p><Image src="/icons/loading.gif" alt="" width={50} height={50} /></p>
                       ) : (
-                           <p>[T-SPLY]: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
+                           <p>[T]: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
                       )}
-                      <Web3Button
-                             contractAddress={ERC20_CONTRACT_ADDRESS}
-                             action={(contract) => contract.erc20.burn(100)}
-                             theme="dark"
-                      >[BURN] 
-                      <Image src="/icons/coin.png" alt="" width={40} height={40}/>
-                      </Web3Button>
                  </div>
                  <div className={styles.componentCard}>
-                       <p>[Balance]</p>
                        {tokenBalanceIsLoading ? (
                             <p><Image src="/icons/loading.gif" alt="" width={50} height={50}/></p>
                       ) : (
-                            <p>[BAL]: {tokenBalance?.displayValue} {tokenBalance?.symbol}</p>
+                            <p>{tokenBalance?.displayValue} {tokenBalance?.symbol}</p>
                       )}
                 </div>
-                       <Link href='project/erc721'>
-                       <Image src="/icons/claim.png" alt="" width={200} height={200} />Claim[ HERE ]
-          <h5 className={styles.selectBoxTitle}></h5>
-                       </Link>
-                       <Link href='/stake'>
-                       <Image src="/icons/stake.png" alt="" width={200} height={200} />Stake[ HERE ]
-          <h5 className={styles.selectBoxTitle}></h5>
-                       </Link>
-                       <Image src="/icons/bnb.gif" alt="" width={150} height={150}/>
+                       <Image src="/icons/zksync.gif" alt="" width={150} height={150}/>
             </div>
         </div>
     )

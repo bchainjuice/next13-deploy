@@ -22,25 +22,28 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbarContainer}>
-            <Image src="/icons/FEG20.gif" alt="drop" width={100} height={100} />
-            <Link href="/">
-                <p className={styles.navbarLogo}><span className={styles.gradientText3}>[KEY]</span></p>
+            <Image src="/icons/eagle.gif" alt="drop" width={150} height={150} />
+            <Link href='https://linktr.ee/eagleprotocol.xyz'>
+          <h4 className={styles.selectBoxTitle}></h4>
+                       </Link>
+            <Link href="/erc20">
+                <h1 className={styles.navbarLogo}></h1>
             </Link>
             <div className={styles.navbarLinks}>
                 <Link
-                    href={"/erc1155"}
+                    href={"https://medium.com/@eagleprotocol1"}
                 >
-                    <h5><span className={styles.gradientText3}>[PASS]</span></h5>
+                    <p>Medium</p>
                 </Link>
                 <Link 
-                    href={"/stake"}
+                    href={"https://discord.gg/qAZKy8bKjY"}
                 >
-                    <h5><span className={styles.gradientText3}>[STAKE]</span></h5>
+                    <p>Discord</p>
                 </Link>
                 <Link
-                    href={"/erc20"}
+                    href={"https://twitter.com/Eagleprotocol1"}
                 >
-                    <h5><span className={styles.gradientText3}>[FEG20]</span></h5>
+                    <p>Twitter</p>
                 </Link>
             </div>
             <div>
@@ -64,8 +67,7 @@ export default function Navbar() {
                                         setProfileMenuOpen(false);
                                     }}
                                 >
-                                     <Image src="/icons/nft.gif" alt="" width={100} height={100} />
-                                    <h3 className={styles.profileMenuLink}>[ TRAVELER ]</h3>
+                                    <h3 className={styles.profileMenuLink}></h3>
                                 </Link>
                                 <hr className={styles.divider}/>
                                 <button
@@ -74,17 +76,19 @@ export default function Navbar() {
                                         disconnect();
                                         setProfileMenuOpen(false);
                                     }}
-                                >[ -Disconnect- ]</button>
+                                >Disconnect</button>
+                                
                             </div>
                         )}
                     </>
                 ) : (
                     <ConnectWallet 
                         btnTitle='CONNECT'
-                        modalTitle='Welcome Traveler'
+                        modalTitle='Connect your wallet to get started'
                         theme="dark"
                         
                     />
+                    
                 )}
             </div>
         </div>
