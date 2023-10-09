@@ -50,19 +50,19 @@ export default function Stake() {
 
     return (
         <div className={styles.container}>
-            <Image src="/icons/stake.gif" alt="" width={450} height={450}/>
+            <Image src="/icons/stake.gif" alt="" width={250} height={250}/>
             <h1>
-            <span className={styles.gradientText0}>
+            <span className={styles.gradientText0}>[STAKE ERC721 NFT]
             </span>
             </h1>
             <h5></h5>
             <div className={styles.stakeRewardContainer}>
                 <div className={styles.stakeRewardInfo}>
-                    <h3>[REWARDS]</h3>
-                    <p>[BALANCE]: {!ERC20TokenBalanceIsLoading ? (<>{ERC20TokenBalance?.displayValue}</>) : (<>0</>)}</p>
+                    <h3>[Rewards]</h3>
+                    <p>[Balance]: {!ERC20TokenBalanceIsLoading ? (<>{ERC20TokenBalance?.displayValue}</>) : (<>0</>)}</p>
                 </div>
                 <div className={styles.stakeClaimableRewardInfo}>
-                    <p>[CLAIMABLE REWARDS]</p>
+                    <p>[Claimable rewards]</p>
                     <p className={styles.claimableRewards}>
                         {!claimableReward
                             ? "0"
@@ -79,8 +79,8 @@ export default function Stake() {
                         }}
                         isDisabled={!claimableReward || claimableReward.isZero()}
                     >
-                        CLAIM
-                        <Image src="/icons/FEG20.gif" alt="" width={30} height={30} />
+                        
+                        <Image src="/icons/FEG20.gif" alt="" width={40} height={40} />
                         </Web3Button>
                 </div>
             </div>

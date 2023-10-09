@@ -29,8 +29,8 @@ export default function ERC1155() {
                 [ PASS ]
             </span>
             </h3>
-                <p>Sybil resistance</p>
-                <h4>[Price]: 0.003 BNB{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
+                <p></p>
+                <h4>[Price]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
@@ -53,7 +53,7 @@ export default function ERC1155() {
                     <p>{ERC1155ContractMetadata?.name}</p>
                     </div>
                 ) : (
-                    <p><Image src="/icons/loading.gif" alt="" width={50} height={50}></Image>HODL...</p>
+                    <p><Image src="/icons/loading.gif" alt="" width={50} height={50}></Image></p>
                 )}
                 </div>
             </div>

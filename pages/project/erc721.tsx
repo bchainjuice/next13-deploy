@@ -43,19 +43,19 @@ export default function ERC721Project() {
                 />
                 <div className={styles.grid}>
                     <div className={styles.componentCard}>
-                          <h3>HODL[KEY]</h3>
-                          <p>Earn FEG20 tokens.</p>
+                          <h3><Image src="/icons/4.gif" alt="drop" width={400} height={400} /></h3>
+                          <p><Image src="/icons/coin.png" alt="drop" width={50} height={50} /></p>
                           <Web3Button
                               contractAddress={ERC721_CONTRACT_ADDRESS}
                               action={(contract) => contract.erc721.claim(1)}
                               theme='dark'
                               onSuccess={() => alert("NFT Claimed!")}
-                          >[CLAIM]</Web3Button>
+                          >CLAIM[ KEY ]</Web3Button>
                     </div>
                     <div className={styles.componentCard}>
-                          <h3>[ STATS ]</h3>
+                          <h3>[ NFT STATS ]</h3>
                           <p>
-                            [TOTAL SUPPLY]:
+                            Total Supply:
                             {totalSupplyIsLoading ? (
                                 "Loading.."
                             ) : (
@@ -63,7 +63,7 @@ export default function ERC721Project() {
                             )}
                           </p>
                           <p>
-                            [TOTAL CLAIMED]:
+                            Total Claimed:
                             {totalClaimedSupplyIsLoading ? (
                                 "Loading..."
                             ) : (
@@ -74,7 +74,7 @@ export default function ERC721Project() {
                     <div className={styles.componentCard}>
                            <h3>[ NFTs ]</h3>
                            <p>
-                            [TOTAL OWNED]:
+                            [Total Owned]:
                             {ownedNFTsIsLoading ? (
                                 "Loading..."
                             ) : (
@@ -97,7 +97,7 @@ export default function ERC721Project() {
                                 <div className={styles.cardText}>
                                     <h2>{nft.metadata.name}</h2>
                                 </div>
-                                <Link href={`/projects/stake`}>
+                                <Link href={`/stake`}>
                                     <button 
                                        className={styles.matchButton}
                                        style={{
@@ -105,7 +105,7 @@ export default function ERC721Project() {
                                             borderRadius: "0 0 10px 10px",
                                        }}
                                        
-                                    >STAKE[NFT]</button>
+                                    >Stake NFT</button>
                                 </Link>
 
                            

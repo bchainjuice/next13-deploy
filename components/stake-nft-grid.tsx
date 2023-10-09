@@ -57,7 +57,7 @@ export default function StakeNFTGrid({
         <div className={styles.stakeSection}>
             <div className={styles.stakeHeader}>
                 <h5><span className={styles.gradientText3}>
-                [OWNED]
+                [Owned]
             </span></h5>
                 <Web3Button
                     contractAddress={STAKING_CONTRACT_ADDRESS}
@@ -68,7 +68,7 @@ export default function StakeNFTGrid({
                         setSelectedNFTs([]);
                     }}
                     isDisabled={selectedNFTs.length === 0}
-                >{`STAKE[${selectedNFTs.length}]`}
+                >{`Stake[${selectedNFTs.length}]`}
                 </Web3Button>
             </div>
             <hr />

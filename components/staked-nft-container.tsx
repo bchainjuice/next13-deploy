@@ -33,7 +33,7 @@ export default function StakedNFTContainer() {
     return (
         <div className={styles.stakeSection}>
             <div className={styles.stakeHeader}>
-                <h5>[STAKED]</h5>
+                <h5>[Staked]</h5>
                 <Web3Button
                     contractAddress={STAKING_CONTRACT_ADDRESS}
                     action={(contract) => contract.call(
@@ -45,7 +45,7 @@ export default function StakedNFTContainer() {
                         setSelectStakedNFT([]);
                         alert("Unstaked NFTs");
                     }}
-                >{`UNSTAKE[${selectStakedNFT.length}]`}</Web3Button>
+                >{`Unstake[${selectStakedNFT.length}]`}</Web3Button>
             </div>
             <hr />
             <div className={styles.nftGridContainer}>

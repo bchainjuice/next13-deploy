@@ -30,7 +30,6 @@ const Home: NextPage = () => {
               [ KEY ]
             </span>
             </h3>
-          <p>The world is yours...</p>
           <h4>[Price]: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h4>
           {address ? (
             <Web3Button
@@ -48,13 +47,13 @@ const Home: NextPage = () => {
             <div className={styles.heroImage}>
               <MediaRenderer
                 src={ERC721ContractMetadata?.image}
-                height="70%"
-                width="70%"
+                height="80%"
+                width="80%"
               />
               <p>{ERC721ContractMetadata?.name}</p>
             </div>
           ) : (
-            <p><Image src="/icons/loading.gif" alt="" width={50} height={50}/>HODL...</p>
+            <p><Image src="/icons/loading.gif" alt="" width={50} height={50}/></p>
           )}
         </div>
       </div>
