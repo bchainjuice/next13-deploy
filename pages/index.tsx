@@ -30,7 +30,7 @@ const Home: NextPage = () => {
               [ PASS ]
             </span>
             </h3>
-          <h4>[Price]: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h4>
+          <h4>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h4>
           {address ? (
             <Web3Button
               contractAddress={ERC721_CONTRACT_ADDRESS}
