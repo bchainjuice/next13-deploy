@@ -29,11 +29,12 @@ const Home: NextPage = () => {
             <span className={styles.gradientText1}>
             MEMBERSHIP PASS
             </span>
+            
             </h3>
-            <h5>The Membership pass will grant</h5>
-            <h5>testers access to our upcoming</h5>
-            <h5>Incentivised testnet.</h5>
-          <h4>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</h4>
+            <h5>Grant testers access to upcoming Incentivised testnet.</h5>
+
+
+          <p>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</p>
           {address ? (
             <Web3Button
               contractAddress={ERC721_CONTRACT_ADDRESS}
