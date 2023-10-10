@@ -22,28 +22,28 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbarContainer}>
-            <Image src="/icons/eagle.gif" alt="drop" width={150} height={150} />
-            <Link href='https://linktr.ee/eagleprotocol.xyz'>
-          <h4 className={styles.selectBoxTitle}></h4>
+            <Image src="/icons/eagle.gif" alt="drop" width={100} height={100} />
+            <Link href="/erc20">
+          <h4 className={styles.selectBoxTitle}>SWAP</h4>
                        </Link>
             <Link href="/erc20">
-                <p className={styles.navbarLogo}>Swap</p>
+                <p className={styles.navbarLogo}></p>
             </Link>
             <div className={styles.navbarLinks}>
                 <Link
                     href={"https://medium.com/@eagleprotocol1"}
                 >
-                    <p>Medium</p>
+                    <p>MEDIUM</p>
                 </Link>
                 <Link 
                     href={"https://discord.gg/qAZKy8bKjY"}
                 >
-                    <p>Discord</p>
+                    <p>DISCORD</p>
                 </Link>
                 <Link
                     href={"https://twitter.com/Eagleprotocol1"}
                 >
-                    <p>Twitter</p>
+                    <p>TWITTER</p>
                 </Link>
             </div>
             <div>
