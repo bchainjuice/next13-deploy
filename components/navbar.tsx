@@ -36,7 +36,7 @@ export default function Navbar() {
                     <p>MEDIUM</p>
                 </Link>
                 <Link 
-                    href={"https://discord.gg/qAZKy8bKjY"}
+                    href={"https://discord.gg/mMxkZaSgdh"}
                 >
                     <p>DISCORD</p>
                 </Link>
