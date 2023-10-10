@@ -38,21 +38,20 @@ export default function ERC20Project() {
             /> 
             <div className={styles.grid}>
                  <div className={styles.componentCard}>
-                      <p>[Supply]</p>
                       {tokenSupplyIsLoading ? (
-                           <p><Image src="/icons/loading.gif" alt="" width={50} height={50} /></p>
+                           <p></p>
                       ) : (
-                           <p>[T]: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
+                           <p></p>
                       )}
                  </div>
                  <div className={styles.componentCard}>
                        {tokenBalanceIsLoading ? (
-                            <p><Image src="/icons/loading.gif" alt="" width={50} height={50}/></p>
+                            <p></p>
                       ) : (
-                            <p>{tokenBalance?.displayValue} {tokenBalance?.symbol}</p>
+                            <p></p>
                       )}
                 </div>
-                       <Image src="/icons/zksync.gif" alt="" width={150} height={150}/>
+                       <Image src="/icons/chains.png" alt="" width={650} height={500}/>
             </div>
         </div>
     )
