@@ -27,7 +27,7 @@ export default function Navbar() {
           <h4 className={styles.selectBoxTitle}></h4>
                        </Link>
             <Link href="/erc20">
-                <h1 className={styles.navbarLogo}></h1>
+                <p className={styles.navbarLogo}>Swap</p>
             </Link>
             <div className={styles.navbarLinks}>
                 <Link
