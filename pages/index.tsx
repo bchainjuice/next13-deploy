@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             </span>
             
             </h3>
-            <h5>Grant testers access to upcoming Incentivised testnet.</h5>
+            <h5>Grant testers access to Incentivized testnet.</h5>
 
 
           <p>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</p>
