@@ -30,12 +30,7 @@ export default function ERC20Project() {
     
     return (
         <div className= {styles.container}>
-            <HeroCard
-                 isLoading={contractMetaDataLoading}
-                 title={contractMetadata?.name!}
-                 description={contractMetadata?.description!}
-                 image={contractMetadata?.image!}
-            /> 
+       <Image src="/icons/coming soon.gif" alt="" width={600} height={600}/>
             <div className={styles.grid}>
                  <div className={styles.componentCard}>
                       {tokenSupplyIsLoading ? (
@@ -51,7 +46,7 @@ export default function ERC20Project() {
                             <p></p>
                       )}
                 </div>
-                       <Image src="/icons/chains.png" alt="" width={650} height={500}/>
+                       <Image src="/icons/chains.png" alt="" width={550} height={400}/>
             </div>
         </div>
     )
