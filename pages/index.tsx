@@ -36,7 +36,7 @@ export default function ERC1155() {
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
                     onSuccess={() => alert("Claimed NFT")}
-                    >claim<Image src="/icons/eagle.gif" alt="" width={30} height={30}/></Web3Button>
+                    ><Image src="/icons/eagle.gif" alt="" width={30} height={30}/>CLAIM</Web3Button>
                 ) : (
                     <p>Connect Wallet to claim!</p>
                 )}
