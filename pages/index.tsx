@@ -26,7 +26,7 @@ export default function ERC1155() {
                 <div>
                 <h3>
                 <span className={styles.gradientText1}>
-                MEMBERSHIP[ PASS ]
+                [ MEMBERSHIP PASS ]
             </span>
             </h3>
                 <p>Grant testers access to incentivized testnet.</p>
