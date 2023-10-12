@@ -29,8 +29,8 @@ export default function ERC1155() {
                 [ MEMBERSHIP PASS ]
             </span>
             </h3>
-                <p>Grant testers access to incentivized testnet.</p>
-                <p>[Price]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
+                <p>Grant access to incentivized testnet.</p>
+                <p>[PRICE]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
