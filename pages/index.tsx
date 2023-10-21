@@ -25,7 +25,7 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 
-                <Image src="/icons/cubeu.gif" alt="drop" width={180} height={180} />
+                <Image src="/icons/cube.gif" alt="drop" width={180} height={180} />
                 <h3>
                 <span className={styles.gradientText1}>
                 MEMBERSHIP PASS
@@ -37,7 +37,7 @@ export default function ERC1155() {
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
-                    onSuccess={() => alert("Claimed NFT")}
+                    onSuccess={() => alert("Membership Pass Claimed")}
                     theme="dark"
                     >C  L  A  I  M</Web3Button>
                     
