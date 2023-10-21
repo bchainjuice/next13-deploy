@@ -24,23 +24,29 @@ export default function ERC1155() {
         <div className={styles.container}>
             <div className={styles.heroContainer}>
                 <div>
+                
+                <Image src="/icons/cube.gif" alt="drop" width={180} height={180} />
                 <h3>
                 <span className={styles.gradientText1}>
-                [ MEMBERSHIP PASS ]
+                MEMBERSHIP PASS
             </span>
             </h3>
-                <p>Grant access to incentivized testnet.</p>
-                <p>[PRICE]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
+                <p></p>
+                <p>[COST]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
                     onSuccess={() => alert("Claimed NFT")}
-                    ><Image src="/icons/eagle.gif" alt="" width={30} height={30}/>CLAIM</Web3Button>
+                    theme="dark"
+                    >C  L  A  I  M</Web3Button>
+                    
                 ) : (
-                    <p>Connect Wallet to claim!</p>
+                    <p>Connect Wallet to claim.</p>
+                    
                 )}
                 </div>
+                
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
@@ -52,7 +58,7 @@ export default function ERC1155() {
                     <p>{ERC1155ContractMetadata?.name}</p>
                     </div>
                 ) : (
-                    <p><Image src="/icons/loading.gif" alt="" width={150} height={150}></Image></p>
+                    <p><Image src="/icons/loading.gif" alt="" width={100} height={100}></Image></p>
                 )}
                 </div>
             </div>
