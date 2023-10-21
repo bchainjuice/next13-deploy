@@ -30,7 +30,7 @@ export default function ERC20Project() {
     
     return (
         <div className= {styles.container}>
-       <Image src="/icons/coming soon.gif" alt="" width={600} height={600}/>
+       <Image src="/icons/chains.gif" alt="" width={550} height={550}/>
             <div className={styles.grid}>
                  <div className={styles.componentCard}>
                       {tokenSupplyIsLoading ? (
@@ -46,8 +46,10 @@ export default function ERC20Project() {
                             <p></p>
                       )}
                 </div>
-                       <Image src="/icons/chains.png" alt="" width={550} height={400}/>
+       <Image src="/icons/coming.gif" alt="" width={350} height={350}/>
             </div>
+            
+       <p><Image src="/icons/arb.png" alt="" width={190} height={190}/></p>
         </div>
     )
 }
