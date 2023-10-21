@@ -25,7 +25,7 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 
-                <Image src="/icons/cube.gif" alt="drop" width={180} height={180} />
+                <Image src="/icons/cubeu.gif" alt="drop" width={180} height={180} />
                 <h3>
                 <span className={styles.gradientText1}>
                 MEMBERSHIP PASS
