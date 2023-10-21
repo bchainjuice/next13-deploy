@@ -52,8 +52,8 @@ export default function ERC1155() {
                     <div className={styles.heroImage}>
                     <MediaRenderer
                         src={ERC1155ContractMetadata?.image}
-                        height="85%"
-                        width="85%"
+                        height="80%"
+                        width="80%"
                     />
                     <p>{ERC1155ContractMetadata?.name}</p>
                     </div>
