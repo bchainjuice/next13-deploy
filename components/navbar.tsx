@@ -22,28 +22,28 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbarContainer}>
-            <Image src="/icons/eagle.gif" alt="drop" width={100} height={100} />
+        
+            <Image src="/icons/eagle1.gif" alt="drop" width={95} height={95} />
+            <Image src="/icons/swing.gif" alt="drop" width={155} height={155} />
             <Link href="/erc20">
-          <h4 className={styles.selectBoxTitle}>SWAP</h4>
+          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={85} height={80} /></h4>
                        </Link>
-            <Link href="/erc20">
-                <p className={styles.navbarLogo}></p>
-            </Link>
+            
             <div className={styles.navbarLinks}>
                 <Link
-                    href={"https://medium.com/@eagleprotocol1"}
+                    href={"https://twitter.com/Eagleprotocol1"}
                 >
-                    <p>MEDIUM</p>
+                    <p><Image src="/icons/x.gif" alt="drop" width={50} height={50} /></p>
                 </Link>
                 <Link 
                     href={"https://discord.gg/mMxkZaSgdh"}
                 >
-                    <p>DISCORD</p>
+                    <p><Image src="/icons/discord.gif" alt="drop" width={50} height={50} /></p>
                 </Link>
                 <Link
-                    href={"https://twitter.com/Eagleprotocol1"}
+                    href={"https://medium.com/@eagleprotocol1"}
                 >
-                    <p>TWITTER</p>
+                    <p><Image src="/icons/medium.gif" alt="drop" width={50} height={50} /></p>
                 </Link>
             </div>
             <div>
