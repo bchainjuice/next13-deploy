@@ -85,7 +85,6 @@ export default function Navbar() {
                     <ConnectWallet 
                         btnTitle='C O N N E C T'
                         modalTitle='Early birds get the worm!'
-                        theme="dark"
                         
                     />
                     
