@@ -76,15 +76,15 @@ export default function Navbar() {
                                         disconnect();
                                         setProfileMenuOpen(false);
                                     }}
-                                >Disconnect</button>
+                                >D i s c o n n e c t</button>
                                 
                             </div>
                         )}
                     </>
                 ) : (
                     <ConnectWallet 
-                        btnTitle='CONNECT'
-                        modalTitle='Connect your wallet to get started'
+                        btnTitle='C O N N E C T'
+                        modalTitle='Early birds get the worm!'
                         theme="dark"
                         
                     />
