@@ -39,7 +39,9 @@ export default function ERC1155() {
                     action={(contract) => contract.erc1155.claim(0, 1)}
                     onSuccess={() => alert("Membership Pass Claimed")}
                     theme="dark"
-                    >C  L  A  I  M</Web3Button>
+                    >
+                    C L A I M
+                    </Web3Button>
                     
                 ) : (
                     <p>Connect Wallet to claim.</p>
@@ -52,8 +54,8 @@ export default function ERC1155() {
                     <div className={styles.heroImage}>
                     <MediaRenderer
                         src={ERC1155ContractMetadata?.image}
-                        height="80%"
-                        width="80%"
+                        height="85%"
+                        width="85%"
                     />
                     <p>{ERC1155ContractMetadata?.name}</p>
                     </div>
@@ -62,6 +64,8 @@ export default function ERC1155() {
                 )}
                 </div>
             </div>
+            
+       <p><Image src="/icons/arb.png" alt="" width={150} height={150}/> </p>
         </div>
     );
 };
