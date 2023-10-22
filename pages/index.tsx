@@ -25,30 +25,34 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 
-                <Image src="/icons/cube.gif" alt="drop" width={180} height={180} />
+                <Image src="/icons/cube.gif" alt="drop" width={200} height={200} />
                 <h3>
                 <span className={styles.gradientText1}>
-                MEMBERSHIP PASS
+                M*I*S*S*I*O*N***
             </span>
             </h3>
-                <p></p>
+                <p>MEMBERSHIP PASS</p>
                 <p>[COST]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
+                <h3>
+                <span className={styles.gradientText1}>
+                ***5K(FCFS)***
+            </span>
+            </h3>
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
                     onSuccess={() => alert("Membership Pass Claimed")}
-                    theme="dark"
                     >
                     C L A I M
                     </Web3Button>
                     
                 ) : (
-                    <p>Connect Wallet to claim.</p>
+                    <p>Claim Membership Pass</p>
                     
                 )}
                 </div>
-                
+                <p><Image src="/icons/cubeuh.gif" alt="" width={100} height={100}/> </p>
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
