@@ -23,27 +23,27 @@ export default function Navbar() {
     return (
         <div className={styles.navbarContainer}>
         
-            <Image src="/icons/eagle1.gif" alt="" width={95} height={95} />
-            <Image src="/icons/swing.gif" alt="" width={155} height={155} />
+            <Image src="/icons/eagle1.gif" alt="drop" width={95} height={95} />
+            <Image src="/icons/swing.gif" alt="drop" width={155} height={155} />
             <Link href="/erc20">
-          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="" width={85} height={80} /></h4>
+          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={85} height={80} /></h4>
                        </Link>
             
             <div className={styles.navbarLinks}>
                 <Link
                     href={"https://twitter.com/Eagleprotocol1"}
                 >
-                    <p><Image src="/icons/x.png" alt="" width={50} height={50} /></p>
+                    <p><Image src="/icons/X.png" alt="drop" width={50} height={50} /></p>
                 </Link>
                 <Link 
                     href={"https://discord.gg/mMxkZaSgdh"}
                 >
-                    <p><Image src="/icons/discord.png" alt="" width={50} height={50} /></p>
+                    <p><Image src="/icons/discord.png" alt="drop" width={50} height={50} /></p>
                 </Link>
                 <Link
                     href={"https://medium.com/@eagleprotocol1"}
                 >
-                    <p><Image src="/icons/medium.png" alt="" width={50} height={50} /></p>
+                    <p><Image src="/icons/medium.png" alt="drop" width={50} height={50} /></p>
                 </Link>
             </div>
             <div>
