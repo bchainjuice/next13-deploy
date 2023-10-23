@@ -53,7 +53,11 @@ export default function ERC1155() {
                     </Web3Button>
                     
                 ) : (
-                    <p>---C O N N E C T---</p>
+                    <h3>
+                    <span className={styles.gradientText1}>     
+                    C-O-N-N-E-C-T
+                </span>
+                </h3>
                     
                 )}
                 </div>
