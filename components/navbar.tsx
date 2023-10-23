@@ -33,17 +33,17 @@ export default function Navbar() {
                 <Link
                     href={"https://twitter.com/Eagleprotocol1"}
                 >
-                    <p><Image src="/icons/x.gif" alt="drop" width={50} height={50} /></p>
+                    <p><Image src="/icons/x.png" alt="drop" width={50} height={50} /></p>
                 </Link>
                 <Link 
                     href={"https://discord.gg/mMxkZaSgdh"}
                 >
-                    <p><Image src="/icons/discord.gif" alt="drop" width={50} height={50} /></p>
+                    <p><Image src="/icons/discord.png" alt="drop" width={50} height={50} /></p>
                 </Link>
                 <Link
                     href={"https://medium.com/@eagleprotocol1"}
                 >
-                    <p><Image src="/icons/medium.gif" alt="drop" width={50} height={50} /></p>
+                    <p><Image src="/icons/medium.png" alt="drop" width={50} height={50} /></p>
                 </Link>
             </div>
             <div>
