@@ -39,7 +39,7 @@ export default function ERC1155() {
             </h3>
                 <p>COST:{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
                 <h3>
-                <span className={styles.gradientText1}>
+                <span className={styles.gradientText3}>
             
             </span>
             </h3>
@@ -53,10 +53,8 @@ export default function ERC1155() {
                     </Web3Button>
                     
                 ) : (
-                    <h3>
-                    <span className={styles.gradientText1}>     
-                    C-O-N-N-E-C-T
-                </span>
+                    <h3>    
+                    Connect Wallet!
                 </h3>
                     
                 )}
