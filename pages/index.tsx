@@ -37,7 +37,7 @@ export default function ERC1155() {
                 
             </span>
             </h3>
-                <p>[COST]: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
+                <p>COST:{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
                 <h3>
                 <span className={styles.gradientText1}>
             
@@ -53,11 +53,11 @@ export default function ERC1155() {
                     </Web3Button>
                     
                 ) : (
-                    <p>Claim Membership Pass</p>
+                    <p>---C O N N E C T---</p>
                     
                 )}
                 </div>
-                <p><Image src="/icons/cubeuh.gif" alt="" width={100} height={100}/> </p>
+                <p><Image src="/icons/pro.jpg" alt="" width={200} height={200}/> </p>
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
