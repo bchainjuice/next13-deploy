@@ -13,21 +13,21 @@
 }
 
 .gradientText1 {
-  background: -webkit-linear-gradient(#fc2929, #fc1414);
+  background: -webkit-linear-gradient(#fcfbfb, #dd0303);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradientText2 {
-  background: -webkit-linear-gradient(#530e0e, #ce5b5b);
+  background: -webkit-linear-gradient(#fc0202, #f7f4f4);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradientText3 {
-  background: -webkit-linear-gradient(#f15b5b, #f5b3b3);
+  background: -webkit-linear-gradient(#f70505, #f7f4f4);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
