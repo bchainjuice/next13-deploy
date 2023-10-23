@@ -1,80 +1,96 @@
-import { MediaRenderer, Web3Button, useActiveClaimCondition, useAddress, useContract, useContractMetadata } from "@thirdweb-dev/react";
-import { ERC1155_CONTRACT_ADDRESS } from "../const/addresses";
-import styles from "../styles/Home.module.css";
+import { ConnectWallet, useAddress, useDisconnect } from '@thirdweb-dev/react';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import randomColor from '../util/randomColor';
+import { useState } from 'react';
 import Image from "next/image"
 
-export default function ERC1155() {
+const [randomColor1, randomColor2] = [
+    randomColor(),
+    randomColor()
+];
+
+export default function Navbar() {
     const address = useAddress();
+    const disconnect = useDisconnect();
 
-    const {
-        contract: ERC1155Contract
-    } = useContract(ERC1155_CONTRACT_ADDRESS, "edition-drop");
+    function truncateAddress(address: string) {
+        return `${address.slice(0, 6)}...${address.slice(-4)}`;
+    }
 
-    const {
-        data: ERC1155ContractMetadata,
-        isLoading: ERC1155ContractMetadataIsLoading
-    } = useContractMetadata(ERC1155Contract);
-
-    const {
-        data: ERC1155ClaimCondition
-    } = useActiveClaimCondition(ERC1155Contract, 0);
-
+    const [profileMenuOpen, setProfileMenuOpen] = useState(false);
 
     return (
-        <div className={styles.container}>
-            <div className={styles.heroContainer}>
-                <div>
-                
-                <Image src="/icons/cube.gif" alt="drop" width={180} height={180} />
-                <h3>
-                <span className={styles.gradientText1}>
-                -M-I-S-S-I-O-N-
-            </span>
-            </h3>
-                <p>MEMBERSHIP PASS</p>
-                <h3>
-                <span className={styles.gradientText1}>
-                
-            </span>
-            </h3>
-                <p>COST:{ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
-                <h3>
-                <span className={styles.gradientText1}>
+        <div className={styles.navbarContainer}>
+        
+            <Image src="/icons/eagle1.gif" alt="" width={95} height={95} />
+            <Image src="/icons/swing.gif" alt="" width={155} height={155} />
+            <Link href="/erc20">
+          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="" width={85} height={80} /></h4>
+                       </Link>
             
-            </span>
-            </h3>
-                {address ? (
-                    <Web3Button
-                    contractAddress={ERC1155_CONTRACT_ADDRESS}
-                    action={(contract) => contract.erc1155.claim(0, 1)}
-                    onSuccess={() => alert("Membership Pass Claimed")}
-                    >
-                    C L A I M
-                    </Web3Button>
-                    
-                ) : (
-                    <p>---C O N N E C T---</p>
-                    
-                )}
-                </div>
-                <p><Image src="/icons/pro.jpg" alt="" width={200} height={200}/> </p>
-                <div className={styles.heroImageContainer}>
-                {!ERC1155ContractMetadataIsLoading ? (
-                    <div className={styles.heroImage}>
-                    <MediaRenderer
-                        src={ERC1155ContractMetadata?.image}
-                        height="85%"
-                        width="85%"
-                    />
-                    <p>{ERC1155ContractMetadata?.name}</p>
-                    </div>
-                ) : (
-                    <p><Image src="/icons/loading.gif" alt="" width={100} height={100}></Image></p>
-                )}
-                </div>
+            <div className={styles.navbarLinks}>
+                <Link
+                    href={"https://twitter.com/Eagleprotocol1"}
+                >
+                    <p><Image src="/icons/x.png" alt="" width={50} height={50} /></p>
+                </Link>
+                <Link 
+                    href={"https://discord.gg/mMxkZaSgdh"}
+                >
+                    <p><Image src="/icons/discord.png" alt="" width={50} height={50} /></p>
+                </Link>
+                <Link
+                    href={"https://medium.com/@eagleprotocol1"}
+                >
+                    <p><Image src="/icons/medium.png" alt="" width={50} height={50} /></p>
+                </Link>
             </div>
-            
-       <p><Image src="/icons/arb.png" alt="" width={150} height={150}/> </p>
+            <div>
+                {address ? (
+                    <>
+                        <div
+                            className={styles.profilePicture}
+                            style={{
+                                background: `linear-gradient(90deg, ${randomColor1}, ${randomColor2})`,
+                            }}
+                            onClick={() => {
+                                setProfileMenuOpen(!profileMenuOpen);
+                            }}
+                        />
+                        {profileMenuOpen && (
+                            <div className={styles.profileMenu}>
+                                <p className={styles.profileMenuAddress}>{truncateAddress(address)}</p>
+                                <Link 
+                                    href={`/profile/${address}`}
+                                    onClick={() => {
+                                        setProfileMenuOpen(false);
+                                    }}
+                                >
+                                    <h3 className={styles.profileMenuLink}></h3>
+                                </Link>
+                                <hr className={styles.divider}/>
+                                <button
+                                    className={styles.navbarSignOutButton}
+                                    onClick={() => {
+                                        disconnect();
+                                        setProfileMenuOpen(false);
+                                    }}
+                                >D i s c o n n e c t</button>
+                                
+                            </div>
+                        )}
+                    </>
+                ) : (
+                    <ConnectWallet 
+                        btnTitle='C O N N E C T'
+                        modalTitle='Early birds get the worm!'
+                        
+                    />
+                    
+                )}
+            </div>
         </div>
+        
     );
 };
