@@ -76,7 +76,7 @@ export default function Navbar() {
                                         disconnect();
                                         setProfileMenuOpen(false);
                                     }}
-                                >D i s c o n n e c t</button>
+                                >D I S C O N N E C T</button>
                                 
                             </div>
                         )}
