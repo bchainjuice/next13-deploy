@@ -28,16 +28,16 @@ export default function ERC1155() {
                 <Image src="/icons/cube.gif" alt="drop" width={150} height={150} />
                 <h3>
                 <span className={styles.gradientText1}>
-                =M_I_S_S_I_O_N=
+                [ M_I_S_S_I_O_N ]
             </span>
             </h3>
-                <p>MEMBERSHIP-PASS</p>
+                <h4>MEMBERSHIP - PASS</h4>
                 <h3>
                 <span className={styles.gradientText1}>
                 
             </span>
             </h3>
-                <p>COST : {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</p>
+                <h4>COST :: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
                 <h3>
                 <span className={styles.gradientText3}>
             
@@ -59,7 +59,7 @@ export default function ERC1155() {
                     
                 )}
                 </div>
-                <p><Image src="/icons/pro.jpg" alt="" width={200} height={200}/> </p>
+                <p><Image src="/icons/pro.jpg" alt="" width={180} height={180}/> </p>
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
