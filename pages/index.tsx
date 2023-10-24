@@ -53,7 +53,10 @@ export default function ERC1155() {
                     </Web3Button>
                     
                 ) : (
-          
+                    <h3>    
+                    
+                </h3>
+                    
                 )}
                 </div>
                 <p><Image src="/icons/pro.jpg" alt="" width={180} height={180}/> </p>
