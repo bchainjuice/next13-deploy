@@ -4,7 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Pixelify Sans", Impact;
+  font-family: "Roboto", Impact;
 }
 
 a {
@@ -17,6 +17,6 @@ a {
 }
 
 body {
-  color: #cfcbcb;
+  color: #b6b4b4;
   background: #030000;
 }
