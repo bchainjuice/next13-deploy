@@ -28,16 +28,16 @@ export default function ERC1155() {
                 <Image src="/icons/cube.gif" alt="drop" width={150} height={150} />
                 <h3>
                 <span className={styles.gradientText1}>
-                [ M_I_S_S_I_O_N ]
+                =M_I_S_S_I_O_N=
             </span>
             </h3>
-                <h4>MEMBERSHIP - PASS</h4>
+                <h4>MEMBERSHIP-PASS</h4>
                 <h3>
                 <span className={styles.gradientText1}>
                 
             </span>
             </h3>
-                <h4>COST :: {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
+                <h4>COST : {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
                 <h3>
                 <span className={styles.gradientText3}>
             
