@@ -59,7 +59,7 @@ export default function ERC1155() {
                     
                 )}
                 </div>
-                <p><Image src="/icons/pro.jpg" alt="" width={250} height={250}/> </p>
+                <p><Image src="/icons/pro.jpg" alt="" width={200} height={200}/> </p>
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
