@@ -25,7 +25,7 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 
-                <Image src="/icons/coming.gif" alt="drop" width={150} height={150} />
+                <Image src="/icons/proc.png" alt="drop" width={150} height={150} />
                 <h3>
                 <span className={styles.gradientText1}>
                 =M_I_S_S_I_O_N=
