@@ -25,7 +25,7 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 
-                <Image src="/icons/proc.png" alt="drop" width={150} height={150} />
+                <Image src="/icons/back.jpg" alt="drop" width={270} height={150} />
                 <h3>
                 <span className={styles.gradientText1}>
                 
@@ -60,7 +60,6 @@ export default function ERC1155() {
                     
                 )}
                 </div>
-                <p><Image src="/icons/back.jpg" alt="" width={250} height={150}/> </p>
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
