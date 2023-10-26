@@ -24,9 +24,9 @@ export default function Navbar() {
         <div className={styles.navbarContainer}>
         
             <Image src="/icons/eagle1.gif" alt="drop" width={95} height={95} />
-            <Image src="/icons/swing.gif" alt="drop" width={155} height={155} />
+            <Image src="/icons/swing.gif" alt="drop" width={180} height={180} />
             <Link href="/erc20">
-          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={85} height={80} /></h4>
+          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={90} height={90} /></h4>
                        </Link>
             
             <div className={styles.navbarLinks}>
@@ -44,6 +44,11 @@ export default function Navbar() {
                     href={"https://medium.com/@eagleprotocol1"}
                 >
                     <p><Image src="/icons/medium.png" alt="drop" width={50} height={50} /></p>
+                </Link>
+                <Link
+                    href={"https://eagle-protocol.gitbook.io/eagle-protocol-litepaper/"}
+                >
+                    <p><Image src="/icons/docs.png" alt="drop" width={90} height={90} /></p>
                 </Link>
             </div>
             <div>
