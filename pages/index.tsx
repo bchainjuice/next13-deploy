@@ -28,7 +28,7 @@ export default function ERC1155() {
                 <Image src="/icons/proc.png" alt="drop" width={150} height={150} />
                 <h3>
                 <span className={styles.gradientText1}>
-                =M_I_S_S_I_O_N=
+                
             </span>
             </h3>
                 <h4>MEMBERSHIP-PASS</h4>
@@ -60,7 +60,7 @@ export default function ERC1155() {
                     
                 )}
                 </div>
-                <p><Image src="/icons/back.jpg" alt="" width={450} height={300}/> </p>
+                <p><Image src="/icons/back.jpg" alt="" width={250} height={150}/> </p>
                 <div className={styles.heroImageContainer}>
                 {!ERC1155ContractMetadataIsLoading ? (
                     <div className={styles.heroImage}>
