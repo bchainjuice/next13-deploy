@@ -47,7 +47,6 @@ export default function ERC20Project() {
                       )}
                 </div>
                 
-       <p><Image src="/icons/arb.png" alt="" width={150} height={150}/> </p>
             </div>
         </div>
     )
