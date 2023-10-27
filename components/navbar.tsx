@@ -26,7 +26,7 @@ export default function Navbar() {
             <Image src="/icons/eagle1.gif" alt="drop" width={95} height={95} />
             <Image src="/icons/swing.gif" alt="drop" width={180} height={180} />
             <Link href="/erc20">
-          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={90} height={90} /></h4>
+          <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={87} height={87} /></h4>
                        </Link>
             
             <div className={styles.navbarLinks}>
