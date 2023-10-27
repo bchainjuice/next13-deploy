@@ -25,17 +25,20 @@ export default function ERC1155() {
             <div className={styles.heroContainer}>
                 <div>
                 
-                <Image src="/icons/back.jpg" alt="drop" width={270} height={150} />
                 <h3>
                 <span className={styles.gradientText1}>
                 
             </span>
             </h3>
-                <h4>MEMBERSHIP-PASS</h4>
+                <h4></h4>
+                
                 <h3>
                 <span className={styles.gradientText1}>
                 
             </span>
+            
+            <p><Image src="/icons/front.png" alt="" width={155} height={155}></Image></p>
+            <p><Image src="/icons/Access.png" alt="" width={155} height={155}></Image></p>
             </h3>
                 <h4>COST : {ERC1155ClaimCondition?.currencyMetadata.displayValue} {ERC1155ClaimCondition?.currencyMetadata.symbol}</h4>
                 <h3>
