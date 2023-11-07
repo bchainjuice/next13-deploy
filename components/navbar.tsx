@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className={styles.navbarContainer}>
         
             <Image src="/icons/eagle1.gif" alt="drop" width={95} height={95} />
-            <Image src="/icons/eagle.png" alt="drop" width={180} height={180} />
+            <Image src="/icons/eagle.png" alt="drop" width={150} height={150} />
             <Link href="/erc20">
           <h4 className={styles.selectBoxTitle}><Image src="/icons/swap.png" alt="drop" width={87} height={87} /></h4>
                        </Link>
