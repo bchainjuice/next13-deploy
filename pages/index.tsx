@@ -17,7 +17,7 @@ export default function ERC1155() {
 
     const {
         data: ERC1155ClaimCondition
-    } = useActiveClaimCondition(ERC1155Contract, 1);
+    } = useActiveClaimCondition(ERC1155Contract, 0);
 
 
     return (
@@ -49,7 +49,7 @@ export default function ERC1155() {
                 {address ? (
                     <Web3Button
                     contractAddress={ERC1155_CONTRACT_ADDRESS}
-                    action={(contract) => contract.erc1155.claim(1, 1)}
+                    action={(contract) => contract.erc1155.claim(0, 1)}
                     onSuccess={() => alert("Membership Pass Claimed")}
                     >
                     C L A I M
